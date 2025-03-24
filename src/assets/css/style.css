@@ -466,6 +466,10 @@ html {
 }
 
 @media (max-width: 500px) {
+    .list-article{
+        padding: 50px 20px 10px 20px;
+    }
+
     .item-artikel .thumbnail{
         height: unset!important;
         padding-top: 10px;
