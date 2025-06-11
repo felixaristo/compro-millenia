@@ -19,9 +19,15 @@
             const res = await fetch(import.meta.env.VITE_BASE_URL_API + 'article/list/1/4')
             const posts = await res.json()
             // console.log(posts);
+
+            const res2 = await fetch(import.meta.env.VITE_BASE_URL_API + 'banner/list/0/0')
+            const posts2 = await res2.json()
+            
+            const allBanner = posts2.data;
             
             return {
-                posts
+                posts,
+                allBanner
             }
         },
         mounted(){
@@ -55,14 +61,42 @@
 
 <template>
     
-    <BCarousel controls indicators :ride="true">
-        <BCarouselSlide class="banner" img-src="http://mill-cloud.id/storage/img/1.png" />
+    <!-- <BCarousel controls indicators :ride="true">
+        <template v-for="i in allBanner">
+            <p>{{ i.image }}</p>
+            <img v-bind:src="i.image">
+            <BCarouselSlide class="banner" v-bind:src="i.image" />    
+        </template> -->
+        <!-- <BCarouselSlide class="banner" img-src="http://mill-cloud.id/storage/img/1.png" />
         <BCarouselSlide class="banner" img-src="http://mill-cloud.id/storage/img/2.png" @click="gotoArticle(5)" />
         <BCarouselSlide class="banner" img-src="http://mill-cloud.id/storage/img/3.png" @click="gotoArticle(4)"/>
-        <BCarouselSlide class="banner" img-src="http://mill-cloud.id/storage/img/4.png" @click="gotoArticle(6)"/>
-        <!-- <BCarouselSlide img-src="https://www.selkirkgeo.com/wp-content/uploads/2017/08/sample-image-1300x600.jpg" />
-        <BCarouselSlide img-src="https://picsum.photos/1024/480/?image=18" /> -->
-    </BCarousel>
+        <BCarouselSlide class="banner" img-src="http://mill-cloud.id/storage/img/4.png" @click="gotoArticle(6)"/> -->
+    <!-- </BCarousel> -->
+<BCarousel controls indicators :ride="true">
+  <BCarouselSlide
+    v-for="(i, index) in allBanner"
+    :key="index"
+    class="banner"
+    :img-src="i.image"
+    @click="gotoArticle(i.article)"
+  />
+</BCarousel>
+    <!-- <div>
+         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img class="d-block w-100" src="http://mill-cloud.id/storage/img/1.png" alt="First slide">
+               </div>
+               <div class="carousel-item">
+                  <img class="d-block w-100" src="http://mill-cloud.id/storage/img/2.png" alt="Second slide">
+               </div>
+            </div>
+         </div>
+      </div> -->
 
     <BContainer class="bv-example-row color-tone" id="transformasicloud" fluid='xxl'>
         <BRow>
