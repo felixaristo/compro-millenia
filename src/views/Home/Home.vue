@@ -684,6 +684,7 @@
             <img src="../../assets/img/partners/MySQL-Logo.png" alt="">
             <img src="../../assets/img/partners/Oracle Fusion.png" alt="">
             <img src="../../assets/img/partners/Oracle e-business suite.png" alt="">
+            <img src="../../assets/img/partners/Helios Logo.png" alt="" width="100">
         </div>
     </BContainer>
     <BContainer class="bv-example-row articles" id="artikel" fluid='xxl'>
