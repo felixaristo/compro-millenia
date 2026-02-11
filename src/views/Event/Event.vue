@@ -20,11 +20,11 @@
         <div class="speaker-section">
           <h3>SPEAKER</h3>
           <div class="speaker-card">
-            <img src="@/assets/img/speaker.png" alt="Dr. Jesús Barrasa" class="speaker-image">
+            <img src="@/assets/img/speaker.jpg" alt="Dr. Jesús Barrasa" class="speaker-image">
             <div class="speaker-info">
-              <h4>Dr. Jesús Barrasa</h4>
-              <p class="speaker-title">Field CTO - GenAI</p>
-              <p class="speaker-bio">Dr. Jesús Barrasa is the Field CTO for AI at Neo4j, where he works with organizations combining the power of LLMs with Knowledge Graphs. He co-authored "Building Knowledge Graphs" (O'Reilly 2023) and is cohost of the Going Meta live webcast (<a href="https://goingmeta.live/">https://goingmeta.live/</a>). Jesús holds a Ph.D. in Artificial Intelligence/Knowledge Representation and is an active thought leader in the KG and AI space.</p>
+              <h4>Chris Wei</h4>
+              <!-- <p class="speaker-title">Field CTO - GenAI</p> -->
+              <p class="speaker-bio">APAC Director at Helios (HAND Global), brings over 10 years of expertise in enterprise digital transformation and expense management, helping organizations across Asia-Pacific streamline financial operations and drive operational excellence.</p>
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@
               <input 
                 v-model="form.phone" 
                 type="tel" 
-                placeholder="628111698682" 
+                placeholder="Phone: 6281582xxxxx" 
                 required
               >
             </div>
@@ -136,7 +136,7 @@
 </template>
 
 <script>
-import eventHeaderImg from '@/assets/img/event-header.png'
+import eventHeaderImg from '@/assets/img/webinar.png'
 
 export default {
   name: 'Event',
@@ -327,7 +327,7 @@ export default {
 }
 
 .left-section h2 {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   color: #333;
   margin-bottom: 40px;
@@ -476,7 +476,7 @@ export default {
 @media (max-width: 768px) {
   .event-header {
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 0;
   }
 
   .header-content h1 {
