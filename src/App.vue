@@ -4,7 +4,7 @@
         app: 'whatsapp',
         label: 'Hubungi',
         name: 'Customer Service',
-        number: '6281946542828',
+        number: '6281210528603',
         avatar: {
           src: 'http://mill-cloud.id/storage/img/man.png'
         }
