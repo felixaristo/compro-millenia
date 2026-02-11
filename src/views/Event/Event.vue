@@ -32,7 +32,7 @@
 
       <div class="right-section">
         <div class="form-container">
-          <h3>Watch Now</h3>
+          <h3>Register Now</h3>
           <form @submit.prevent="handleSubmit">
             <div class="form-group">
               <input 
