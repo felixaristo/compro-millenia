@@ -15,7 +15,7 @@
     <!-- Main Content -->
     <div class="event-content">
       <div class="left-section">
-        <h2>Join our 1-hour webinar and live demo by Helios Hands Global to see how Helios AI-Based Expense & Travel Management—used by worldwide leading companies—helps organizations cut unnecessary costs, enforce policies consistently, and gain real-time visibility into employee spending through a smarter, AI-driven approach.</h2>
+        <h2>Join our 1-hour webinar and live demo by Helios Hands Global to see how Helios AI-Based Expense & Travel Management used by both local companies such as GOJEK and worldwide leading companies Air Liquide, Shell, and Palfinger helps organizations cut unnecessary costs, enforce policies consistently, and gain real-time visibility into employee spending through a smarter, AI-driven approach.</h2>
         
         <div class="speaker-section">
           <h3>SPEAKER</h3>
@@ -25,6 +25,15 @@
               <h4>Chris Wei</h4>
               <!-- <p class="speaker-title">Field CTO - GenAI</p> -->
               <p class="speaker-bio">APAC Director at Helios (HAND Global), brings over 10 years of expertise in enterprise digital transformation and expense management, helping organizations across Asia-Pacific streamline financial operations and drive operational excellence.</p>
+            </div>
+          </div>
+          <br><br>
+          <div class="speaker-card">
+            <img src="@/assets/img/speaker2.jpg" alt="Dr. Jesús Barrasa" class="speaker-image">
+            <div class="speaker-info">
+              <h4>Lorraiine Lee</h4>
+              <!-- <p class="speaker-title">Field CTO - GenAI</p> -->
+              <p class="speaker-bio">A Digital Transformation Leader at HAND Global. Guides finance and IT leaders inleveraging AI-powered for strategic expense management and cost efficiencies.</p>
             </div>
           </div>
         </div>
